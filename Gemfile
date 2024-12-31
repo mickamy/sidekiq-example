@@ -57,3 +57,5 @@ group :test do
 end
 
 gem "sidekiq", "~> 7.3"
+
+gem "redis-rails", "~> 5.0"
