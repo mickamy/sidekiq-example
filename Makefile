@@ -1,5 +1,6 @@
 .PHONY: \
 	up \
+	up-d \
 	down \
 	down-v \
 	build \
@@ -8,6 +9,9 @@
 
 up: down ## Start the Docker containers
 	docker compose up
+
+up-d: down ## Start the Docker containers in detached mode
+	docker compose up -d
 
 down: ## Stop the Docker containers
 	docker compose down
