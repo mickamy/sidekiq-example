@@ -40,8 +40,6 @@ services:
     image: redis:7.4.1-alpine
     volumes:
       - redis:/data
-    ports:
-      - "6379:6379"
     environment:
       REDIS_PASSWORD: password
     healthcheck:
