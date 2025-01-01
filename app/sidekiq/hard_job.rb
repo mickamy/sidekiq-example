@@ -2,6 +2,7 @@ class HardJob
   include Sidekiq::Job
 
   def perform(*args)
-    # Do something
+    sleep 5
+    puts "Hard Job done!"
   end
 end
